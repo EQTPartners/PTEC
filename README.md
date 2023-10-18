@@ -99,12 +99,12 @@ If you use or refer to this repository in your research, please cite it as:
     year={2023},
     publisher={EQT},
     version={1.0},
-    url={https://github.com/EQTPartners/mb-sector-thesis}
+    url={https://github.com/EQTPartners/PTEC}
 }
 ```
 
 ## APA
-Buchner, V., Cao, L., Kalo, J.-C., & von Ehrenheim, V. (2023). Accelerating Thematic Investment with Prompt Tuned Pretrained Language Models (Version 1.0) [Software]. EQT. https://github.com/EQTPartners/mb-sector-thesis
+Buchner, V., Cao, L., Kalo, J.-C., & von Ehrenheim, V. (2023). Accelerating Thematic Investment with Prompt Tuned Pretrained Language Models (Version 1.0) [Software]. EQT. https://github.com/EQTPartners/PTEC
 
 ## MLA
-Buchner, Valentin, et al. "Accelerating Thematic Investment with Prompt Tuned Pretrained Language Models." Version 1.0, EQT, 2023, https://github.com/EQTPartners/mb-sector-thesis.
+Buchner, Valentin, et al. "Accelerating Thematic Investment with Prompt Tuned Pretrained Language Models." Version 1.0, EQT, 2023, https://github.com/EQTPartners/PTEC.
