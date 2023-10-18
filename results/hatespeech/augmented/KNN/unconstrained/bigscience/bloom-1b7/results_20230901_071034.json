@@ -1,0 +1,12 @@
+{
+    "args": {
+        "dataset": "hatespeech",
+        "model_name": "bigscience/bloom-1b7",
+        "type": "KNN",
+        "augmented": "augmented",
+        "embedding_type": "mean_pooling",
+        "param": 1.0011518407812479
+    },
+    "training_flops": 2088759676035637.2,
+    "inference_flops": 3.5880589679116e+17
+}

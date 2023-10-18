@@ -1,0 +1,12 @@
+{
+    "args": {
+        "dataset": "hatespeech",
+        "model_name": "bigscience/bloom-1b7",
+        "type": "RadiusNN",
+        "augmented": "preprocessed",
+        "embedding_type": "mean_pooling",
+        "param": 38.07947176588889
+    },
+    "training_flops": 838804555577348.0,
+    "inference_flops": 3.5878449109516e+17
+}

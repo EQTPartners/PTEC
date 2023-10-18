@@ -1,0 +1,12 @@
+{
+    "args": {
+        "dataset": "hatespeech",
+        "model_name": "huggyllama/llama-7b",
+        "type": "KNN",
+        "augmented": "preprocessed",
+        "embedding_type": "mean_pooling",
+        "param": 1.0011518407812479
+    },
+    "training_flops": 3718173677572616.0,
+    "inference_flops": 1.59035108929807e+18
+}

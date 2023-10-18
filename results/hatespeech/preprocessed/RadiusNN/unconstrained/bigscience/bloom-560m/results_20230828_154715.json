@@ -1,0 +1,165 @@
+{
+    "no_seed": {
+        "sectors": {
+            "Towards law enforcement": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 32.0
+            },
+            "Accusations": {
+                "precision": 0.14285714285714285,
+                "recall": 0.03225806451612903,
+                "f1-score": 0.052631578947368425,
+                "support": 31.0
+            },
+            "Promoting violence": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 61.0
+            },
+            "Towards AJ+": {
+                "precision": 0.2857142857142857,
+                "recall": 0.05263157894736842,
+                "f1-score": 0.08888888888888889,
+                "support": 38.0
+            },
+            "Media": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+            },
+            "Specific nation(s)": {
+                "precision": 0.25,
+                "recall": 0.0425531914893617,
+                "f1-score": 0.07272727272727272,
+                "support": 47.0
+            },
+            "Towards Jews/Judaism": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 5.0
+            },
+            "Towards Islam": {
+                "precision": 0.18181818181818182,
+                "recall": 0.07142857142857142,
+                "f1-score": 0.10256410256410255,
+                "support": 28.0
+            },
+            "Swearing": {
+                "precision": 0.5,
+                "recall": 0.047619047619047616,
+                "f1-score": 0.08695652173913042,
+                "support": 42.0
+            },
+            "Corporations": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 12.0
+            },
+            "Xenophobia": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 22.0
+            },
+            "Religion": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 4.0
+            },
+            "Humiliation": {
+                "precision": 0.2857142857142857,
+                "recall": 0.05263157894736842,
+                "f1-score": 0.08888888888888889,
+                "support": 38.0
+            },
+            "Politics": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 25.0
+            },
+            "Terrorism": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 13.0
+            },
+            "Towards wealthy people": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 18.0
+            },
+            "Humanity": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 8.0
+            },
+            "Behavior": {
+                "precision": 0.125,
+                "recall": 0.03333333333333333,
+                "f1-score": 0.052631578947368425,
+                "support": 30.0
+            },
+            "Racist towards black": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 3.0
+            },
+            "Specific person": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 40.0
+            },
+            "Racist towards white": {
+                "precision": 0.0,
+                "recall": 0.0,
+                "f1-score": 0.0,
+                "support": 6.0
+            },
+            "Neutral": {
+                "precision": 0.5813953488372093,
+                "recall": 0.1059322033898305,
+                "f1-score": 0.17921146953405015,
+                "support": 236.0
+            },
+            "micro avg": {
+                "precision": 0.2890625,
+                "recall": 0.04979811574697174,
+                "f1-score": 0.08495981630309989,
+                "support": 743.0
+            },
+            "macro avg": {
+                "precision": 0.10693178386095935,
+                "recall": 0.019926707712318657,
+                "f1-score": 0.03293183191986684,
+                "support": 743.0
+            },
+            "weighted avg": {
+                "precision": 0.275831855396161,
+                "recall": 0.04979811574697174,
+                "f1-score": 0.08371754950794216,
+                "support": 743.0
+            },
+            "samples avg": {
+                "precision": 0.0605515587529976,
+                "recall": 0.06025179856115108,
+                "f1-score": 0.060191846522781776,
+                "support": 743.0
+            }
+        },
+        "jaccard_micro": 0.04436450839328537,
+        "jaccard_macro": 0.017397588876527478,
+        "jaccard_weighted": 0.04523293156734401,
+        "jaccard_samples": 0.05815347721822541,
+        "avg_n_predicted": 

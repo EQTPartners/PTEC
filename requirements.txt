@@ -1,0 +1,17 @@
+# install torch on vertex with: torch==1.13.1+cu117 --extra-index-url https://download.pytorch.org/whl/cu117 --no-cache-dir
+ipykernel
+pandas
+git+https://github.com/huggingface/transformers
+iterative-stratification
+bayesian-optimization
+sentencepiece
+openai
+python-dotenv
+parallelformers
+tqdm
+accelerate
+bitsandbytes
+scikit-learn
+matplotlib
+tensorboard
+fschat
