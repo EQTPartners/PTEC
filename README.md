@@ -1,5 +1,5 @@
-# Prompt Tuning for Sector Classification - Master Thesis
-The repository for the master thesis research regarding company sector classification, containing experiments comparing different methods for sector classification
+# Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation
+This repository contains the code accompanying the paper "Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation", which will be available on ArXiv soon. 
 
 # Installation
 After cloning this repository, the necessary packages can be installed with:
