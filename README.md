@@ -1,5 +1,14 @@
 # Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation
-This repository contains the code accompanying the paper "Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation", which will be available on ArXiv soon. 
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2309.12075"><img src="https://img.shields.io/badge/arXiv-2309.12075-red.svg?style=for-the-badge"></a>
+  <a href="https://medium.com/motherbrain/how-eqt-motherbrain-uses-llms-to-map-companies-to-industry-sectors-d713e7923380"><img src="https://img.shields.io/badge/Medium-%23000000.svg?&style=for-the-badge&logo=Medium&logoColor=white"></a>
+</p>
+
+This repository contains the code accompanying the paper ["Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation"](https://arxiv.org/abs/2309.12075). We also recommend to read our blog post ["How EQT Motherbrain uses LLMs to map companies to industry sectors"](https://motherbrain.ai/how-eqt-motherbrain-uses-llms-to-map-companies-to-industry-sectors-d713e7923380). For any questions, please contact [valentin.buchner@eqtpartners.com](mailto:valentin.buchner@eqtpartners.com).
+
+
+
 
 # Installation
 After cloning this repository, the necessary packages can be installed with:
@@ -89,22 +98,22 @@ For an example of applying Trie Search, see `notebooks/constrained_beam_search.i
 
 
 # Citation
-If you use or refer to this repository in your research, please cite it as:
+If you use or refer to this repository in your research, please cite our paper:
 
 ## BibTeX
 ```bash
-@misc{buchner2023PTEC,
-    title={Accelerating Thematic Investment with Prompt Tuned Pretrained Language Models},
-    author={Valentin Buchner and Lele Cao and Jan-Christoph Kalo and Vilhelm von Ehrenheim},
+@article{buchner2023prompt,
+    title={Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation},
+    author={Valentin Leonhard Buchner and Lele Cao and Jan-Christoph Kalo and Vilhelm von Ehrenheim},
     year={2023},
-    publisher={EQT},
-    version={1.0},
-    url={https://github.com/EQTPartners/PTEC}
+    eprint={2309.12075},
+    archivePrefix={arXiv},
+    primaryClass={cs.CL}
 }
 ```
 
 ## APA
-Buchner, V., Cao, L., Kalo, J.-C., & von Ehrenheim, V. (2023). Accelerating Thematic Investment with Prompt Tuned Pretrained Language Models (Version 1.0) [Software]. EQT. https://github.com/EQTPartners/PTEC
+Buchner, V. L., Cao, L., Kalo, J.-C., & von Ehrenheim, V. (2023). Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation [Preprint]. arXiv:2309.12075. cs.CL.
 
 ## MLA
-Buchner, Valentin, et al. "Accelerating Thematic Investment with Prompt Tuned Pretrained Language Models." Version 1.0, EQT, 2023, https://github.com/EQTPartners/PTEC.
+Buchner, Valentin Leonhard, et al. "Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation." arXiv preprint arXiv:2309.12075, 2023.

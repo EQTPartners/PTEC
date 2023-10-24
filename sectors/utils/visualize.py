@@ -161,13 +161,16 @@ def plot_data_insights(dataset):
     ax.spines["bottom"].set_color("black")
     ax.grid(color="grey", linestyle="-", linewidth=0.25, alpha=0.75)
 
+    plt.yticks(fontsize=18)
+    plt.xticks(fontsize=18)
+
     plt.savefig(
         os.path.join(FIG_DIR, dataset, "des_len_og.png"), dpi=300, bbox_inches="tight"
     )
     plt.show()
 
     preprocessed = pd.read_json(
-        os.path.join(DATA_DIR, dataset, "train_preprocessed.json"), lines=True
+    os.path.join(DATA_DIR, dataset, "train_preprocessed.json"), lines=True
     )
     preprocessed["des_len"] = preprocessed.apply(lambda x: len(x[text_col]), axis=1)
 
@@ -189,6 +192,9 @@ def plot_data_insights(dataset):
     ax.spines["bottom"].set_color("black")
     ax.grid(color="grey", linestyle="-", linewidth=0.25, alpha=0.75)
 
+    plt.yticks(fontsize=18)
+    plt.xticks(fontsize=18)
+
     plt.savefig(
         os.path.join(FIG_DIR, dataset, "des_len_pre.png"), dpi=300, bbox_inches="tight"
     )
@@ -202,13 +208,13 @@ def plot_data_insights(dataset):
     sns.histplot(
         label_count,
         bins=4,
-        log_scale=(False, False),
+        log_scale=(False, True),
         color="#ff5703",
         edgecolor="#ff5703",
         ax=ax,
     )
-    ax.set_xlabel("Label Count", fontsize=22)
-    ax.set_ylabel("Frequency", fontsize=22)
+    ax.set_xlabel("#Labels per Example", fontsize=22)
+    ax.set_ylabel("Log Frequency", fontsize=22)
     ax.set_xticks(np.arange(1, 5, step=1))
 
     ax.spines["top"].set_visible(False)
@@ -217,8 +223,58 @@ def plot_data_insights(dataset):
     ax.spines["bottom"].set_color("black")
     ax.grid(color="grey", linestyle="-", linewidth=0.25, alpha=0.75)
 
+    plt.yticks(fontsize=18)
+    plt.xticks(fontsize=18)
+
     plt.savefig(
         os.path.join(FIG_DIR, dataset, "label_count.png"), dpi=300, bbox_inches="tight"
+    )
+    plt.show()
+
+    # show ditribution of examples over classes
+    label_columns = [col for col in train.columns if col not in remove]
+    labels = train[label_columns]
+    label_count = labels.sum(axis=0)
+    label_count = label_count.sort_values(ascending=False)
+
+    bar_color = "#ff5703"
+    alpha_value = 0.3
+    bar_color_rgb = tuple(int(bar_color.lstrip('#')[i:i+2], 16) for i in (0, 2, 4))
+    bar_color_rgba = tuple([x/255 for x in bar_color_rgb] + [alpha_value])
+
+
+    fig, ax = plt.subplots(figsize=(6, 6))
+    sns.barplot(
+        x=label_count.index,
+        y=label_count.values,
+        color="#ff5703",
+        alpha=0.8,
+        edgecolor=bar_color_rgba,
+        ax=ax,
+    )
+    ax.set_xlabel("#Examples per Label", fontsize=22)
+    ax.set_ylabel("Frequency", fontsize=22)
+    yticks = np.arange(0, label_count.max(), 100)
+    ax.set_yticks(yticks)
+    xticks = np.arange(0, len(label_count), 20)
+    ax.set_xticks(xticks)
+
+    plt.yticks(fontsize=18)
+    plt.xticks(fontsize=18)
+
+    ax.spines["top"].set_visible(False)
+    ax.spines["right"].set_visible(False)
+    ax.spines["left"].set_color("black")
+    ax.spines["bottom"].set_color("black")
+    ax.tick_params(axis='x', colors='none')
+    xticks = ax.get_xticks()
+    num_xticks = len(xticks)
+    invisible_labels = ['1'] * num_xticks
+    ax.set_xticklabels(invisible_labels, color='none')
+    ax.grid(color="grey", linestyle="-", linewidth=0.25, alpha=0.75)
+
+    plt.savefig(
+        os.path.join(FIG_DIR, dataset, "label_dist.png"), dpi=300, bbox_inches="tight"
     )
     plt.show()
 
