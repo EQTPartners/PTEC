@@ -133,7 +133,9 @@ def json_compatible(data):
         return [item for item in data if is_json_serializable(item)]
     elif isinstance(data, dict):
         data = {key: json_compatible(value) for key, value in data.items()}
-        return {key: value for key, value in data.items() if is_json_serializable(value)}
+        return {
+            key: value for key, value in data.items() if is_json_serializable(value)
+        }
     elif isinstance(data, np.int64):
         return int(data)
     elif isinstance(data, np.float32):
