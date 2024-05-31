@@ -10,8 +10,8 @@
   <a href="#installation">Installation</a> •
   <a href="#reproducibility">Reproducibility</a> •
   <a href="#usage">Usage</a> •
-  <a href="#other-resources">Other Resources</a> •
   <a href="https://arxiv.org/abs/2309.12075">Paper</a> •
+  <a href="https://console.cloud.google.com/storage/browser/motherbrain-ptec?project=motherbrain-external">NAACL 2024 Presentation</a> •
   <a href="https://medium.com/motherbrain/how-eqt-motherbrain-uses-llms-to-map-companies-to-industry-sectors-d713e7923380">Blog Post</a> •
   <a href="#citation">Citation</a> 
 </p>
