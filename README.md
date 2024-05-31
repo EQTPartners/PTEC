@@ -26,7 +26,7 @@
 
 #
 
-This repository contains the code accompanying the paper ["Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation"](https://arxiv.org/abs/2309.12075). We also recommend to read our blog post ["How EQT Motherbrain uses LLMs to map companies to industry sectors"](https://motherbrain.ai/how-eqt-motherbrain-uses-llms-to-map-companies-to-industry-sectors-d713e7923380). For any questions, please contact [valentin.buchner@eqtpartners.com](mailto:valentin.buchner@eqtpartners.com).
+This repository contains the code accompanying the paper ["Prompt Tuned Embedding Classification for Multi-Label Industry Sector Allocation"](https://arxiv.org/abs/2309.12075). We also recommend to read our blog post ["How EQT Motherbrain uses LLMs to map companies to industry sectors"](https://motherbrain.ai/how-eqt-motherbrain-uses-llms-to-map-companies-to-industry-sectors-d713e7923380).
 
 
 ## Installation
